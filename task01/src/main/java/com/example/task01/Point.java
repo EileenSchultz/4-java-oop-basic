@@ -4,8 +4,8 @@ package com.example.task01;
  * Класс точки на плоскости
  */
 public class Point {
-    int x;
-    int y;
+    private int x;
+    private int y;
 
     public Point(int x, int y) {
         this.x = x;
@@ -42,7 +42,7 @@ public class Point {
 
     @Override
     public String toString() {
-        return "("+ this.x + ", "+ this. y +")";
-       //throw new UnsupportedOperationException("Метод toString не реализован");
+        return "(" + this.x + ", " + this.y + ")";
+        //throw new UnsupportedOperationException("Метод toString не реализован");
     }
 }

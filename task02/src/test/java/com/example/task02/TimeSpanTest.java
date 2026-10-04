@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Task02MainTest {
+public class TimeSpanTest {
 
     private static final int HOURS = 0;
     private static final int MINUTES = 1;
