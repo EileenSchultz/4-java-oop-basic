@@ -8,16 +8,21 @@ public class Point {
     int y;
 
     public Point(int x, int y) {
-        // TODO: реализовать
-        throw new UnsupportedOperationException("Конструктор не реализован");
+        this.x = x;
+        this.y = y;
+        //throw new UnsupportedOperationException("Конструктор не реализован");
     }
 
     /**
      * "Вращает" точку относительно начала координат на 180 градусов
      */
     public void flip() {
-        // TODO: реализовать
-        throw new UnsupportedOperationException("Метод flip не реализован");
+        int newX = -this.y;
+        int newY = -this.x;
+
+        this.x = newX;
+        this.y = newY;
+        //throw new UnsupportedOperationException("Метод flip не реализован");
     }
 
     /**
@@ -27,13 +32,17 @@ public class Point {
      * @return расстояние между точками
      */
     public double distance(Point point) {
-        // TODO: реализовать
-        throw new UnsupportedOperationException("Метод distance не реализован");
+
+        int distX = point.x - this.x;
+        int distY = point.y - this.y;
+
+        return Math.sqrt(Math.pow(distX, 2) + Math.pow(distY, 2));
+        //throw new UnsupportedOperationException("Метод distance не реализован");
     }
 
     @Override
     public String toString() {
-        // TODO: реализовать
-        throw new UnsupportedOperationException("Метод toString не реализован");
+        return "("+ this.x + ", "+ this. y +")";
+       //throw new UnsupportedOperationException("Метод toString не реализован");
     }
 }
